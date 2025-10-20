@@ -19,7 +19,7 @@ const Visit = sequelize.define(
     },
     userId: {
       type: DataTypes.INTEGER,
-      allowNull: false,
+      allowNull: true,
       references: {
         model: "users",
         key: "id",
@@ -27,7 +27,7 @@ const Visit = sequelize.define(
     },
     eventId: {
       type: DataTypes.INTEGER,
-      allowNull: true,
+      allowNull: false,
       references: {
         model: "events",
         key: "id",

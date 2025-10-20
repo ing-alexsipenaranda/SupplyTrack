@@ -1,6 +1,7 @@
 const sequelize = require("../config/database");
 const User = require("./User");
 const Supplier = require("./Supplier");
+const SupplierContact = require("./Contact");
 const SupplierEvent = require("./SupplierEvents");
 const Event = require("./Event");
 const Industry = require("./Industry");
